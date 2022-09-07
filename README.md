@@ -36,6 +36,12 @@ php artisan db:seed
 php artisan serve
 ```
 
+### Run artisan schedule:
+
+``` 
+php artisan schedule:work
+```
+
 #### Iniciar sesion con:
 
 * __usuario__: usuario1@hotmail.com
