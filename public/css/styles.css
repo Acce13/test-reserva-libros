@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #00B4DB;
+    --color-primary-dark: #0083b0;
+    --color-white: #FFFFFF;
+}
+
+body {
+    background-color: #f0efef;
+}
+
+.login-container, .header {
+    background: var(--color-primary);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color-primary-dark), var(--color-primary));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*
+* HOME STYLES
+*/
+
+.content {
+    background: var(--color-white);
+}
+
+.header__user-avatar {
+    width: 7rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+* COMPONENTS
+*/
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+.btn-primary:active {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+.btn-primary:focus {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    box-shadow: 0 0 0 0.25rem rgba(0, 131, 176, 0.5) !important;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.btn-group-fap {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.btn-fab:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.book {
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.book:hover {
+    transform: scale(1.1);
+}
+
+/*
+* UTILITIES
+*/
+
+.u-radius-1 { border-radius: 1rem; }
